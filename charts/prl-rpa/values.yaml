@@ -1,5 +1,5 @@
 java:
-  applicationPort: 4450
+  applicationPort: 4410
   image: 'hmctspublic.azurecr.io/prl/rpa:latest'
   ingressHost: prl-rpa-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
   aadIdentityName: prl

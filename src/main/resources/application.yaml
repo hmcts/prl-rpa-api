@@ -1,5 +1,5 @@
 server:
-  port: 4450
+  port: 4410
 
 management:
   endpoint:

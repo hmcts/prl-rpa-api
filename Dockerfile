@@ -7,5 +7,5 @@ FROM hmctspublic.azurecr.io/base/java:openjdk-11-distroless-1.2
 COPY lib/AI-Agent.xml /opt/app/
 COPY build/libs/prl-rpa.jar /opt/app/
 
-EXPOSE 4450
+EXPOSE 4410
 CMD [ "prl-rpa.jar" ]
