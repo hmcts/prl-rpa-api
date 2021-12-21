@@ -1,8 +1,7 @@
 apiVersion: v2
 appVersion: "1.0"
-description: A Helm chart for spring-boot-template App
-name: rpe-spring-boot-template
-home: https://github.com/hmcts/spring-boot-template
+description: Family Private Law - Notification Service
+name: prl-rpa
 version: 0.0.1
 maintainers:
   - name: HMCTS rpe team
