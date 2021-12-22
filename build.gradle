@@ -112,9 +112,12 @@ project.tasks['sonarqube'].dependsOn jacocoTestReport
 
 sonarqube {
   properties {
-    property "sonar.projectName", "Reform :: prl-rpa"
-    property "sonar.projectKey", "uk.gov.hmcts.reform:prl-rpa"
+    property "sonar.projectName", "Family Private Law :: prl-rpa"
+    property "sonar.projectKey", "prl-rpa-api"
+    property "sonar.exclusions", sonarExclusions.join(", ")
     property "sonar.coverage.jacoco.xmlReportPaths", "${jacocoTestReport.reports.xml.destination.path}"
+    property "sonar.pitest.mode", "reuseReport"
+    property "sonar.pitest.reportsDirectory", "build/reports/pitest"
   }
 }
 
